@@ -1,18 +1,12 @@
-apiVersion: argoproj.io/v1alpha1
+
+apiVersion: batch/v1
 kind: Job
 metadata:
   name: hello-python
-  namespace: argocd
 spec:
-  project: default
-  source:
-    repoURL: https://github.com/mscn-aarhustech/basic-programming.git
-    targetRevision: main
-    path: Python/HelloWorldKubernetes
-  destination:
-    server: https://kubernetes.default.svc
-    namespace: default
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
+  template:
+    spec:
+      containers:
+        - name: hello-python
+          image: ghcr.io/aarhustech/hello-python:latest
+      restartPolicy: Never
