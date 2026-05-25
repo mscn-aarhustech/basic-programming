@@ -22,7 +22,7 @@ jobs:
         run: docker build -t ghcr.io/${{ github.repository_owner }}/hello-python:latest ./Python/HelloWorldDocker
       
       - name: Run Docker image
-        run: docker run hello-python:latest
+        run: docker run ghcr.io/${{ github.repository_owner }}/hello-python:latest
 
       - name: Push Docker image
         run: docker push ghcr.io/${{ github.repository_owner }}/hello-python:latest
