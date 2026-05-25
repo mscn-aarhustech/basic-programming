@@ -1,0 +1,11 @@
+# Use an official Python base image
+FROM python:3.12-slim
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy all project files into the container
+COPY . .
+
+# Run the script when the container starts
+CMD ["python", "Script.py"]
