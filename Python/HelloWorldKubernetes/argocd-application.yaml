@@ -8,5 +8,5 @@ spec:
     spec:
       containers:
         - name: hello-python
-          image: ghcr.io/aarhustech/hello-python:latest
+          image: ghcr.io/mscn-aarhustech/hello-python:latest
       restartPolicy: Never
