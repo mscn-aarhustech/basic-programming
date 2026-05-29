@@ -1,4 +1,5 @@
-def HelloWorld():
+# Funktion
+def PrintHelloWorld():
     """
     Prints the phrase "Hello, World!"
 

@@ -1,7 +1,14 @@
+# Print literal - bogstavelig værdi
 print("Hello, World!")
 
-import HelloWorldModule as h
+# Variabel = værdi
+myMessage = "Hello, World!"
 
-h.HelloWorld()
+# for-loop
+# for(int i = 0; i < 3; i++) 
+#{
+# print(myMessage)
+#}
+for i in range(1, 30001, 10000):
+    print(myMessage + " " + str(i))
 
-help(h.HelloWorld)
