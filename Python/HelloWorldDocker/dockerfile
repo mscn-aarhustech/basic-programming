@@ -1,11 +1,11 @@
-# Use an official Python base image
+# Vælg Python image
 FROM python:3.12-slim
 
-# Set the working directory inside the container
+# Sæt directory
 WORKDIR /app
 
-# Copy all project files into the container
+# Kopier alle filer fra projektet til image
 COPY . .
 
-# Run the script when the container starts
+# Kør script når container starter
 CMD ["python", "Script.py"]
