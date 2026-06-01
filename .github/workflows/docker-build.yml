@@ -15,11 +15,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # - name: Build Docker image no GHCR
+      #   run: docker build -t hello-python ./HelloWorldDocker
+      
+      # - name: Test Docker image no GHCR
+      #   run: docker run hello-python
+
       - name: Log in to GitHub Container Registry
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
       - name: Build Docker image
         run: docker build -t ghcr.io/${{ github.repository_owner }}/hello-python:latest ./Python/HelloWorldDocker
+
       
       - name: Run Docker image
         run: docker run ghcr.io/${{ github.repository_owner }}/hello-python:latest
