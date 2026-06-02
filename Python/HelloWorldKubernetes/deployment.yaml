@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: hello-kubernetes-test
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
       app: hello-kubernetes-test
