@@ -27,9 +27,8 @@ jobs:
       - name: Build Docker image
         run: docker build -t ghcr.io/${{ github.repository_owner }}/hello-kubernetes:latest ./Python/HelloWorldKubernetes
 
-      
       - name: Run Docker image
-        run: docker run ghcr.io/${{ github.repository_owner }}/hello-kubernetes:latest
+        run: docker run -d ghcr.io/${{ github.repository_owner }}/hello-kubernetes:latest
 
       - name: Push Docker image
         run: docker push ghcr.io/${{ github.repository_owner }}/hello-kubernetes:latest
