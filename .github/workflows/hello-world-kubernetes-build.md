@@ -27,7 +27,7 @@ jobs:
       - name: Build Docker image
         run: docker build -t ghcr.io/${{ github.repository_owner }}/hello-kubernetes:latest ./Python/HelloWorldKubernetes
 
-      - name: Run Docker image
+      - name: Run Docker image (detached mode)
         run: docker run -d ghcr.io/${{ github.repository_owner }}/hello-kubernetes:latest
 
       - name: Push Docker image
