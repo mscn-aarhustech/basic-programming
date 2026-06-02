@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/mscn-aarhustech/basic-programming.git
     targetRevision: HEAD
-    path: Python/ArgoCD/Apps
+    path: Python/HelloArgoCD/Apps
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
