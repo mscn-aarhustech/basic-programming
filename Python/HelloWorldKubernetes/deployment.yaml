@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-python
+  name: hello-kubernetes-test
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-python
+      app: hello-kubernetes-test
   template:
     metadata:
       labels:
-        app: hello-python
+        app: hello-kubernetes-test
     spec:
       containers:
-        - name: hello-python
-          image: ghcr.io/mscn-aarhustech/hello-docker:latest
+        - name: hello-kubernetes-test
+          image: ghcr.io/mscn-aarhustech/hello-kubernetes-test:latest
           imagePullPolicy: IfNotPresent

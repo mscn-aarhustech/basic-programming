@@ -1,4 +1,4 @@
-name: Build and Push hello-docker Docker Image
+name: Build and Push hello-docker-test Docker Image
 
 on:
   push:
