@@ -1,7 +1,8 @@
-from HelloWorldModule import HelloWorld
+import time
 
-def main():
-    HelloWorld()
+i = 0
 
-if __name__ == "__main__":
-    main()
+while True:
+    print("Hello, World from Kubernetes! # " + str(i), flush=True)
+    i = i+1
+    time.sleep(1.0)
