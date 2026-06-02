@@ -15,4 +15,4 @@ spec:
       containers:
         - name: hello-python
           image: ghcr.io/mscn-aarhustech/hello-python:latest
-          imagePullPolicy: Always
+          imagePullPolicy: IfNotPresent
