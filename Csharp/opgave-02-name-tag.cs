@@ -1,7 +1,7 @@
 string navn = "Skriv dit navn her";
-string rolle = "Elev";
+string rolle = "Skriv din rolle her";
 string hold = "Skriv dit hold her";
-string favoritTeknologi = "C#";
+string favoritTeknologi = "Skriv din favorit-teknologi her";
 
 Console.WriteLine("================================");
 Console.WriteLine("       DIGITALT NAVNESKILT      ");
